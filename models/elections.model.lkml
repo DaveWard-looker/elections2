@@ -2,6 +2,7 @@ connection: "bigquery_personal_instance"
 
 # include all the views
 include: "/views/**/*.view"
+include: "/formats.lkml"
 
 datagroup: elections_default_datagroup {
    sql_trigger: SELECT count(*) FROM presidential;;

@@ -1,3 +1,4 @@
+include: "/formats.lkml"
 view: house {
   sql_table_name: `daveward-ps-dev.daveward_demodataset.house`
     ;;
@@ -100,5 +101,6 @@ view: house {
   measure: count {
     type: count
     drill_fields: []
+    value_format_name: usd_in_millions
   }
 }

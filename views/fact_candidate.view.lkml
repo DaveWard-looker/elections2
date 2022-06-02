@@ -2,6 +2,7 @@ view: fact_candidate {
   derived_table: {
     sql: SELECT year, candidate, party, candidatevotes FROM  `daveward-ps-dev.daveward_demodataset.presidential`
       ;;
+      sql_trigger_value: select count(*) from  `daveward-ps-dev.daveward_demodataset.presidential` ;;
   }
 
   measure: count {
